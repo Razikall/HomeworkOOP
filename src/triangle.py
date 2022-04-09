@@ -29,10 +29,3 @@ class Triangle(Figure):
     def area(self):
         h_per = (self.side_a + self.side_b + self.side_c) / 2
         return int(math.sqrt(h_per * (h_per - self.side_a) * (h_per - self.side_b) * (h_per - self.side_c)))
-
-    # Расчет суммы площадей, если пришла фигура, соответствующая классу Figure
-    def add_area(self, some_figure):
-        if isinstance(some_figure, Figure):
-            return self.area + some_figure.area
-        else:
-            raise ValueError("Incorrect class")

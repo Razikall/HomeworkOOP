@@ -23,10 +23,3 @@ class Rectangle(Figure):
     @property
     def area(self):
         return self.side_a * self.side_b
-
-    # Расчет суммы площадей, если пришла фигура, соответствующая классу Figure
-    def add_area(self, some_figure):
-        if isinstance(some_figure, Figure):
-            return self.area + some_figure.area
-        else:
-            raise ValueError("Incorrect class")

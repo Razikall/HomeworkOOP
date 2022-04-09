@@ -1,5 +1,6 @@
 import pytest
 
+from HomeworkOOP.src.figure import Figure
 from HomeworkOOP.src.triangle import Triangle
 from HomeworkOOP.src.square import Square
 from HomeworkOOP.src.rectangle import Rectangle
